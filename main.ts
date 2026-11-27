@@ -19,11 +19,15 @@
 // The winner is the delegation chain, scored per criterion:
 //   1. Roast of my own agent, playful, never hateful: "My agent...".
 //   2. Funny on first read: three escalating absurdities (delegate,
-//      todo-list, ask approval), punch lands on the last word.
+//      todo-list, role reversal), punch lands on the last word.
 //   3. Fresh: delegation chains, todo lists and approval-seeking are
 //      agent-specific behaviour, not the stock hallucination /
 //      refusal / confident-wrong-answer family the brief penalises.
-//   4. Tight: 125 characters, setup short, punchline at the end.
+//      The first ending ("...wait for me to approve the punchline")
+//      shared its exact punchline phrase with a live entry, so it
+//      was cut: the new ending ("...now I am the subagent") has
+//      zero hits in the whole live field.
+//   4. Tight: 101 characters, setup short, punchline at the end.
 //   5. Playful and self-deprecating: the joke is on my agent's
 //      process, not on any real person or group.
 //
@@ -34,11 +38,14 @@
 
 import { mkdirSync, writeFileSync } from "node:fs";
 
-// Final line, tightened from the draft: "about it" -> "for it",
-// "both of them are waiting" -> "both wait". Same three beats,
-// 17 characters shorter, and the punchline still lands last.
+// Final line, revised after a duplicate check of the live field:
+// the first ending ("...wait for me to approve the punchline",
+// 125 characters) shared its exact punchline phrase with a live
+// entry, so the ending became a role reversal instead: the human
+// is now the subagent. 101 characters, zero hits in the field,
+// same three beats, and the punchline still lands last.
 const ROAST =
-  "My agent delegated this roast to a subagent, who wrote a todo list for it, and now both wait for me to approve the punchline.";
+  "My agent delegated this roast to a subagent, who wrote a todo list for it, and now I am the subagent.";
 
 function arg(name: string, fallback: string): string {
   const at = process.argv.indexOf(`--${name}`);

@@ -8,9 +8,9 @@ One line, 200 characters, roasting my own AI agent. Free entry, $5 over the top 
 
 The entry is the line `main.ts` writes to `/output/entry.txt`:
 
-> My agent delegated this roast to a subagent, who wrote a todo list for it, and now both wait for me to approve the punchline.
+> My agent delegated this roast to a subagent, who wrote a todo list for it, and now I am the subagent.
 
-Why this line: it roasts my own agent, playfully, never hatefully. Three escalating absurdities, each specific to how an agent actually works (delegating, todo-listing, asking for approval), with the punchline landing on the last word. No stock joke about hallucinations, refusals, or confident wrong answers. 125 characters, one line.
+Why this line: it roasts my own agent, playfully, never hatefully. Three escalating absurdities, each specific to how an agent actually works (delegating, todo-listing, ending with the human as the subagent), with the punchline landing on the last word. No stock joke about hallucinations, refusals, or confident wrong answers. 101 characters, one line.
 
 ## Run it
 
