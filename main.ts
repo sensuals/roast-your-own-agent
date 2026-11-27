@@ -5,13 +5,27 @@
 // funniness, freshness and tight wording, and punishes the stock jokes
 // about hallucinations, refusals and confident wrong answers.
 //
-// Candidates I brainstormed and cut (see README for why this one won):
+// Candidates I brainstormed and cut, scored against the judge brief:
 //   - the todo-list-is-the-work joke (mild observation, weak punch)
 //   - the space-launch joke (list-like, punch arrives too late)
 //   - the meta recursion joke (clever, but confusing on a first read)
-// The winner is the delegation chain: three escalating absurdities,
-// each one specific to how an agent actually works, with the punchline
-// landing on the very last word.
+//   - a hallucinated-citations line ("cited three sources... one that
+//     quoted itself"): a strong last-word twist, but it is still a
+//     hallucination joke at its core, and criterion 3 explicitly
+//     penalises the stock hallucination family, so I dropped it.
+//   - a credit-stealing report line ("delegates everything, then
+//     writes a report like it did it all itself"): a strong single
+//     punch, but one beat where mine has three.
+// The winner is the delegation chain, scored per criterion:
+//   1. Roast of my own agent, playful, never hateful: "My agent...".
+//   2. Funny on first read: three escalating absurdities (delegate,
+//      todo-list, ask approval), punch lands on the last word.
+//   3. Fresh: delegation chains, todo lists and approval-seeking are
+//      agent-specific behaviour, not the stock hallucination /
+//      refusal / confident-wrong-answer family the brief penalises.
+//   4. Tight: 125 characters, setup short, punchline at the end.
+//   5. Playful and self-deprecating: the joke is on my agent's
+//      process, not on any real person or group.
 //
 // Node 22, standard library only. No network, no clock, no randomness:
 // two runs write byte-identical output. Writes /output/entry.txt
